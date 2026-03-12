@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GameDev Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#hero" class="nav-logo">Aditi Verma</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#games">Games</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <div id="hero">
+    <div class="hero-orb orb1"></div>
+    <div class="hero-orb orb2"></div>
+    <div class="hero-orb orb3"></div>
+    <div class="hero-content">
+      <div class="hero-tag">✦ Unity Developer & Game Designer</div>
+      <h1 class="hero-title">
+        Crafting worlds<br>
+        <span class="line2">one</span> <span class="highlight">frame</span> <span class="line2">at a time.</span>
+      </h1>
+      <p class="hero-sub">I'm Aditi — a Unity developer building 2D, 3D, and VR games. Focused on gameplay feel, polished UI, and experiences worth playing.</p>
+      <div class="hero-ctas">
+        <a href="#games" class="btn btn-primary">See My Games</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="full-divider"></div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="reveal">
+      <p class="section-label">Who I am</p>
+      <h2 class="section-title">A developer obsessed<br><span>with great games.</span></h2>
+    </div>
+    <div class="about-grid reveal" style="grid-template-columns: 1fr;">
+      <div class="about-text">
+        <p>Hey! I'm <strong>Aditi Verma</strong>, an aspiring Unity developer focused on 2D/3D gameplay systems and interactive UI. I love exploring what makes games feel <em>good</em> — from tight controls to satisfying feedback loops.</p>
+        <p>I've worked on mobile games, VR tools, and solo projects ranging from tower defense systems to gravity-switching platformers. Currently a B.Tech CS student at Amity University Rajasthan (2023–2027).</p>
+        <p>Experienced with Unity, C#, Blender, Photoshop, and Aseprite. Passionate about building polished, responsive game experiences.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="full-divider"></div>
+
+  <!-- GAMES -->
+  <section id="games">
+    <div class="reveal">
+      <p class="section-label">My work</p>
+      <h2 class="section-title">Featured <span>games.</span></h2>
+    </div>
+    <div class="games-grid">
+
+      <!-- CARD 1 - Geometry Wars -->
+      <div class="game-card reveal">
+        <div class="game-thumb" style="padding:0; overflow:hidden; position:relative;">
+          <img src="geometry-wars.png" alt="Geometry Wars screenshot" style="width:100%; height:100%; object-fit:cover; display:block;">
+          <span class="game-badge badge-3d" style="position:absolute; top:1rem; right:1rem;">Mobile</span>
+        </div>
+        <div class="game-info">
+          <div class="game-title">Geometry Wars</div>
+          <div class="game-desc">A mobile shooter with enemy waves and combat systems. Features object pooling, Google Play Games authentication, cloud save, and leaderboards via Unity Gaming Services.</div>
+          <div class="game-tags">
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
+            <span class="tag">Android</span>
+            <span class="tag">UGS</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2 - Samurai Runner -->
+      <div class="game-card reveal">
+        <div class="game-thumb" style="padding:0; overflow:hidden; position:relative;">
+          <img src="samurai-runner.png" alt="Samurai Runner screenshot" style="width:100%; height:100%; object-fit:cover; display:block;">
+          <span class="game-badge badge-2d" style="position:absolute; top:1rem; right:1rem;">2D</span>
+        </div>
+        <div class="game-info">
+          <div class="game-title">Samurai Runner</div>
+          <div class="game-desc">A 2D endless runner with a gravity-switch mechanic for dynamic gameplay. Features smooth controls, fluid animation flow, and an obstacle system that keeps you on your toes.</div>
+          <div class="game-tags">
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
+            <span class="tag">Endless Runner</span>
+            <span class="tag">Pixel Art</span>
+          </div>
+          <div class="game-links">
+            <a href="https://aditiverma95.github.io/SamuraiRunnerGame/" target="_blank" class="game-btn game-btn-play">▶ Play in Browser</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3 - 3D Design Saga VR -->
+      <div class="game-card reveal">
+        <div class="game-thumb" style="padding:0; overflow:hidden;">
+          <img src="design-saga.png" alt="3D Design Saga screenshot" style="width:100%; height:100%; object-fit:cover; display:block;">
+          <span class="game-badge badge-vr" style="position:absolute; top:1rem; right:1rem;">VR / PC</span>
+        </div>
+        <div class="game-info">
+          <div class="game-title">3D Design Saga</div>
+          <div class="game-desc">A runtime 3D scene design tool built in Unity with XR Toolkit. Enables object placement, transform controls, model importing, and interactive scene customization — built during my internship at AIC MUJ.</div>
+          <div class="game-tags">
+            <span class="tag">Unity</span>
+            <span class="tag">XR Toolkit</span>
+            <span class="tag">PC VR</span>
+            <span class="tag">Tool</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 4 - Math Runner -->
+      <div class="game-card reveal">
+        <div class="game-thumb" style="padding:0; overflow:hidden; position:relative;">
+          <img src="math-runner.png" alt="Math Runner screenshot" style="width:100%; height:100%; object-fit:cover; display:block;">
+          <span class="game-badge badge-2d" style="position:absolute; top:1rem; right:1rem;">3D</span>
+        </div>
+        <div class="game-info">
+          <div class="game-title">Math Runner</div>
+          <div class="game-desc">An educational 3D runner game that blends fast-paced gameplay with math challenges. Players must solve equations on the fly to progress and avoid obstacles.</div>
+          <div class="game-tags">
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
+            <span class="tag">Educational</span>
+            <span class="tag">Runner</span>
+          </div>
+          <div class="game-links">
+            <a href="https://aditiverma95.github.io/MathRunnerGame/" target="_blank" class="game-btn game-btn-play">▶ Play in Browser</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- IN PROGRESS -->
+    <div class="reveal" style="margin-top: 4rem;">
+      <p class="section-label">🔧 In Progress</p>
+      <h2 class="section-title" style="margin-bottom: 1.5rem;">Currently <span>building.</span></h2>
+    </div>
+    <div class="games-grid">
+      <div class="game-card reveal" style="border-color: rgba(255,217,160,0.2);">
+        <div class="game-thumb" style="padding:0; overflow:hidden; position:relative; background:#0d2a2e;">
+          <img src="tile-shift.png" alt="Tile Shift screenshot" style="width:100%; height:100%; object-fit:cover; object-position: center 15%; display:block; opacity:0.9;">
+          <span class="game-badge" style="position:absolute; top:1rem; right:1rem; background:rgba(255,217,160,0.15); color:var(--accent4);">In Progress</span>
+        </div>
+        <div class="game-info">
+          <div class="game-title" style="display:flex; align-items:center; gap:0.6rem;">
+            Tile Shift
+            <span style="font-size:0.65rem; background:rgba(255,217,160,0.15); color:var(--accent4); padding:0.2rem 0.6rem; border-radius:99px; font-family:'Syne',sans-serif; font-weight:600; letter-spacing:0.08em;">WIP</span>
+          </div>
+          <div class="game-desc">A 2D swipe-based puzzle game for Android. Players swipe to slide tiles into place across levels — focused on smooth transitions, clean UI, and satisfying solve mechanics. Currently in active development.</div>
+          <div class="game-tags">
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
+            <span class="tag">2D Puzzle</span>
+            <span class="tag">Android</span>
+          </div>
+          <div class="game-links">
+            <span class="game-btn" style="background:var(--bg3); color:var(--text-muted); border:1px solid var(--border); cursor:default;">Coming soon...</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+
+
+  <div class="full-divider"></div>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="reveal">
+      <p class="section-label">What I use</p>
+      <h2 class="section-title">Tools & <span>skills.</span></h2>
+    </div>
+    <div class="skills-grid reveal">
+      <div class="skill-chip"><span class="skill-icon">🎮</span><span class="skill-name">Unity 2D/3D</span></div>
+      <div class="skill-chip"><span class="skill-icon">💻</span><span class="skill-name">C#</span></div>
+      <div class="skill-chip"><span class="skill-icon">🥽</span><span class="skill-name">XR Toolkit</span></div>
+      <div class="skill-chip"><span class="skill-icon">📱</span><span class="skill-name">Android / Mobile</span></div>
+      <div class="skill-chip"><span class="skill-icon">☁️</span><span class="skill-name">Unity Gaming Services</span></div>
+      <div class="skill-chip"><span class="skill-icon">🏆</span><span class="skill-name">Leaderboards / Cloud Save</span></div>
+      <div class="skill-chip"><span class="skill-icon">🖼️</span><span class="skill-name">Blender</span></div>
+      <div class="skill-chip"><span class="skill-icon">🎨</span><span class="skill-name">Aseprite</span></div>
+      <div class="skill-chip"><span class="skill-icon">🖌️</span><span class="skill-name">Photoshop</span></div>
+      <div class="skill-chip"><span class="skill-icon">✏️</span><span class="skill-name">Figma</span></div>
+      <div class="skill-chip"><span class="skill-icon">📦</span><span class="skill-name">Git / GitHub</span></div>
+      <div class="skill-chip"><span class="skill-icon">🌐</span><span class="skill-name">REST APIs / JSON</span></div>
+      <div class="skill-chip"><span class="skill-icon">🧩</span><span class="skill-name">Game Architecture</span></div>
+      <div class="skill-chip"><span class="skill-icon">⚙️</span><span class="skill-name">OOP</span></div>
+      <div class="skill-chip"><span class="skill-icon">🎯</span><span class="skill-name">UI Systems</span></div>
+      <div class="skill-chip"><span class="skill-icon">🔁</span><span class="skill-name">Object Pooling</span></div>
+    </div>
+  </section>
+
+  <div class="full-divider"></div>
+
+  <!-- CONTACT -->
+  <div id="contact">
+    <div class="contact-wrapper">
+      <div class="contact-inner reveal">
+        <div class="contact-left">
+          <p class="section-label">Get in touch</p>
+          <h2>Let's make<br>something fun.</h2>
+          <p>Whether it's a collaboration, a job opportunity, or just to talk games — my inbox is open.</p>
+          <div class="social-links">
+            <a href="https://github.com/AditiVerma95" target="_blank" class="social-link">
+              <div class="sico sico-github">🐙</div>
+              github.com/AditiVerma95
+            </a>
+            <a href="https://linkedin.com/in/aditi-verma-283242285" target="_blank" class="social-link">
+              <div class="sico sico-twitter">💼</div>
+              linkedin.com/in/aditi-verma
+            </a>
+            <a href="mailto:aditv040@gmail.com" class="social-link">
+              <div class="sico sico-mail">✉️</div>
+              aditv040@gmail.com
+            </a>
+          </div>
+        </div>
+        <form class="contact-form" action="https://formspree.io/f/mgonkggp" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Name</label>
+              <input type="text" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" name="email" placeholder="your@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Subject</label>
+            <input type="text" name="subject" placeholder="Collab? Job? Just saying hi?" />
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea name="message" placeholder="Tell me about your project, opportunity, or just drop a hello..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="align-self:flex-start">Send Message →</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">Aditi Verma</div>
+    <div>Built with ♥  · © 2026</div>
+    <div><a href="#hero" style="color:var(--text-muted); text-decoration:none;">↑ Back to top</a></div>
+  </footer>
+
+  <script>
+    // ── SCROLL REVEAL ──
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          const children = e.target.querySelectorAll('.game-card, .skill-chip');
+          children.forEach((c, i) => {
+            c.style.transitionDelay = `${i * 0.06}s`;
+            c.classList.add('reveal', 'visible');
+          });
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+  </script>
+</body>
+</html>
