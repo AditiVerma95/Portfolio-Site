@@ -12,7 +12,7 @@
 
   <!-- NAV -->
   <nav>
-    <a href="#hero" class="nav-logo">Aditi.dev</a>
+    <a href="#hero" class="nav-logo">Aditi Verma</a>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#games">Games</a></li>
@@ -68,9 +68,12 @@
 
       <!-- CARD 1 - Geometry Wars -->
       <div class="game-card reveal">
-        <div class="game-thumb" style="padding:0; overflow:hidden; position:relative;">
+        <div class="game-thumb" style="padding:0; overflow:hidden; position:relative; cursor:pointer;"
+             onmouseenter="this.querySelector('img').src='geometry-wars.gif'"
+             onmouseleave="this.querySelector('img').src='geometry-wars.png'">
           <img src="geometry-wars.png" alt="Geometry Wars screenshot" style="width:100%; height:100%; object-fit:cover; display:block;">
           <span class="game-badge badge-3d" style="position:absolute; top:1rem; right:1rem;">Mobile</span>
+          <div style="position:absolute; bottom:0.8rem; left:50%; transform:translateX(-50%); font-size:0.7rem; letter-spacing:0.1em; text-transform:uppercase; color:rgba(255,255,255,0.5); background:rgba(0,0,0,0.4); padding:0.2rem 0.7rem; border-radius:99px; white-space:nowrap; pointer-events:none;">Hover to play ▶</div>
         </div>
         <div class="game-info">
           <div class="game-title">Geometry Wars</div>
@@ -107,9 +110,12 @@
 
       <!-- CARD 3 - 3D Design Saga VR -->
       <div class="game-card reveal">
-        <div class="game-thumb" style="padding:0; overflow:hidden;">
+        <div class="game-thumb" style="padding:0; overflow:hidden; position:relative; cursor:pointer;"
+             onmouseenter="this.querySelector('img').src='design-saga.gif'"
+             onmouseleave="this.querySelector('img').src='design-saga.png'">
           <img src="design-saga.png" alt="3D Design Saga screenshot" style="width:100%; height:100%; object-fit:cover; display:block;">
           <span class="game-badge badge-vr" style="position:absolute; top:1rem; right:1rem;">VR / PC</span>
+          <div style="position:absolute; bottom:0.8rem; left:50%; transform:translateX(-50%); font-size:0.7rem; letter-spacing:0.1em; text-transform:uppercase; color:rgba(255,255,255,0.5); background:rgba(0,0,0,0.4); padding:0.2rem 0.7rem; border-radius:99px; white-space:nowrap; pointer-events:none;">Hover to play ▶</div>
         </div>
         <div class="game-info">
           <div class="game-title">3D Design Saga</div>
@@ -163,6 +169,28 @@
             <span class="tag">AR Foundation</span>
             <span class="tag">C#</span>
             <span class="tag">XR</span>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- CARD 6 - Stack-a-Cake -->
+      <div class="game-card reveal">
+        <div class="game-thumb" style="padding:0; overflow:hidden; position:relative; cursor:pointer;"
+             onmouseenter="this.querySelector('img').src='stack-a-cake.gif'"
+             onmouseleave="this.querySelector('img').src='stack-a-cake-thumb.png'">
+          <img src="stack-a-cake.png" alt="Stack-a-Cake screenshot" style="width:100%; height:100%; object-fit:cover; display:block;">
+          <span class="game-badge badge-2d" style="position:absolute; top:1rem; right:1rem;">Mobile</span>
+          <div style="position:absolute; bottom:0.8rem; left:50%; transform:translateX(-50%); font-size:0.7rem; letter-spacing:0.1em; text-transform:uppercase; color:rgba(255,255,255,0.5); background:rgba(0,0,0,0.4); padding:0.2rem 0.7rem; border-radius:99px; white-space:nowrap; pointer-events:none;">Hover to play ▶</div>
+        </div>
+        <div class="game-info">
+          <div class="game-title">Stack-a-Cake</div>
+          <div class="game-desc">A fun mobile stacking game where players stack cake layers as high as possible. Simple one-tap controls with satisfying physics and progressively tricky timing.</div>
+          <div class="game-tags">
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
+            <span class="tag">Mobile</span>
+            <span class="tag">Casual</span>
           </div>
         </div>
       </div>
@@ -251,9 +279,9 @@
               <div class="sico sico-twitter">💼</div>
               linkedin.com/in/aditi-verma
             </a>
-            <a href="/cdn-cgi/l/email-protection#e283868b9694d2d6d2a2858f838b8ecc818d8f" class="social-link">
+            <a href="mailto:aditv040@gmail.com" class="social-link">
               <div class="sico sico-mail">✉️</div>
-              <span class="__cf_email__" data-cfemail="09686d607d7f393d39496e64686065276a6664">[email&#160;protected]</span>
+              aditv040@gmail.com
             </a>
           </div>
         </div>
@@ -289,7 +317,7 @@
     <div><a href="#hero" style="color:var(--text-muted); text-decoration:none;">↑ Back to top</a></div>
   </footer>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  <script>
     // ── SCROLL REVEAL ──
     const revealObserver = new IntersectionObserver((entries) => {
       entries.forEach(e => {
